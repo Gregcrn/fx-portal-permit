@@ -1,0 +1,28 @@
+{
+  "testnet": {
+    "fxERC20Permit": {
+      "address": "0x37b755597e72EB2499E50b62EF1bcaE30BB7c9fc"
+    },
+    "fxERC20": {
+      "address": "0x55bc4047bCd6Da3A9364f753038EB4E729754e8C"
+    },
+    "fxERC20Child": {
+      "address": "0xae5773a6b5bB29a0C76d16583726a9d05E8DC9C2"
+    },
+    "checkpointManager": {
+      "address": "0x2890bA17EfE978480615e330ecB65333b880928e"
+    },
+    "fxRoot": {
+      "address": "0x3d1d3E34f7fB6D26245E6640E1c50710eFFf15bA"
+    },
+    "fxChild": {
+      "address": "0xCf73231F28B7331BBe3124B907840A94851f9f11"
+    },
+    "fxRootTunnel": {
+      "address": "0x2CC547e76529D3AcC62660bf238004E7645197Bb"
+    },
+    "fxChildTunnel":{
+      "address": ""
+    }
+  }
+}

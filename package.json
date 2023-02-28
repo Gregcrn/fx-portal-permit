@@ -1,0 +1,26 @@
+{
+    "name": "vldtokenpermit",
+    "version": "1.0.0",
+    "description": "Token ERC20 with permit function",
+    "main": "truffle-config.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "GregCrn",
+    "license": "ISC",
+    "dependencies": {
+        "@maticnetwork/fx-portal": "^1.0.5",
+        "@openzeppelin/contracts": "^4.8.1",
+        "@truffle/hdwallet-provider": "^2.1.7",
+        "dotenv": "^16.0.3",
+        "fs": "^0.0.1-security",
+        "web3": "^1.8.2"
+    },
+    "devDependencies": {
+        "truffle-plugin-verify": "^0.6.1"
+    }
+}
