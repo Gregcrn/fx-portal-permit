@@ -5,8 +5,8 @@ const Web3 = require('web3');
 const Tx = require('ethereumjs-tx').Transaction;
 const fs = require('fs');
 
-const INFURA_ID = process.env.INFURA_ID;
-const web3 = new Web3(`https://goerli.infura.io/v3/${INFURA_ID}`);
+const MUMBAI_PRIVATE_KEY = process.env.MUMBAI_TESTNET;
+const web3 = new Web3(`https://rpc-mumbai.maticvigil.com/v1/${MUMBAI_PRIVATE_KEY}`);
 
 const ChildTunnelABI = require('../build/contracts/FxERC20ChildTunnel.json').abi;
 const FxERC20ChildTunnelAddress = config.testnet.FxERC20ChildTunnel.address;
@@ -41,7 +41,9 @@ async function main() {
         data: functionSignature,
     };
 
-    const tx = new Tx(txParams, { 'chain': 'goerli' });
+    // TX with txParams and mumbai chain
+    const tx = new Tx({ ...txParams, chainId: 80001 });
+    console.log(tx)
     tx.sign(privateKey);
 
     const serializedTx = tx.serialize();
