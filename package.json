@@ -16,7 +16,10 @@
         "@maticnetwork/fx-portal": "^1.0.5",
         "@openzeppelin/contracts": "^4.8.1",
         "@truffle/hdwallet-provider": "^2.1.7",
+        "bignumber.js": "^9.1.1",
         "dotenv": "^16.0.3",
+        "ethereumjs-tx": "^2.1.2",
+        "ethers": "^6.0.8",
         "fs": "^0.0.1-security",
         "web3": "^1.8.2"
     },
